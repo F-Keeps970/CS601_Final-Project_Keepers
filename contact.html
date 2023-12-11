@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="validate.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Contact me</h1>
+      <nav class="navLinks">
+        <a class="navLinkChild" href="index.html">HOME</a>
+        <a class="navLinkChild" href="resume.html">RESUME</a>
+        <a class="navLinkChild" href="hobbies.html">HOBBIES</a>
+        <a class="navLinkChild" href="gallery.html">GALLERY</a>
+        <a class="navLinkChild" href="projects.html">PROJECTS</a>
+        <a class="navLinkChild" href="contact.html">CONTACT ME</a>
+      </nav>
+    </div>
+  <main>
+    <div id="formAlign">
+    <form action="https://formspree.io/f/meqbypba" onsubmit="return checkInput()" method="post">
+      
+      <!-- id="fullName" -->
+      <label for="fullName" id="fullNameLabel" >Full Name:</label><br>
+      <input type="text" id="fullName" name="fullName" required><br>
+
+      <label for="email" id="emailLabel">Email:</label><br>
+      <input type="text" id="email" name="email" required><br>
+
+      <label for="contents" id="messageContentsLabel">Message:</label><br>
+      <textarea id="messageContents" name="contents" required></textarea><br>
+
+      <button class="submitButton" onclick="checkInput()">SUBMIT</button>
+ 
+    </form>
+  </div>
+  </main>
+    <footer>
+      Fred Keepers <br>
+      Final Project<br>
+      CS601 - Fall O2
+    </footer>
+  </body>
+</html>
