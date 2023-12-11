@@ -24,7 +24,7 @@ function checkInput() {
     }
     
 
-    //Checks that input lengths are at least two char long
+    //Checks that input lengths are at least two characters long
     if (fullNameValue.length < 2) {
         event.preventDefault();
         document.getElementById("fullNameLabel").innerHTML = fnErrorText + inputLengthError;
