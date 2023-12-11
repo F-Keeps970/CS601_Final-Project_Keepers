@@ -63,7 +63,6 @@
         </div>
     
         <div class="galleryObjects">
-          <!-- <img :src="dogPic5" height="250" width="auto" alt="a golden retreiever mix laying next to a black and white cat"> -->
           <div v-on:mouseenter="hover5 = true" v-on:mouseleave="hover5 = false">
             <img :src="dogPic5" v-if="!hover5" height="250" width="250" alt="A lab chow chow mix laying on a tile floor on his back">
             <img :src="dogPic5Old" v-if="hover5" height="250" width="250" alt="A lab chow chow mix laying next to a black and white cat">
@@ -83,7 +82,6 @@
   
     <!--Create Vue instance-->
     <script>
-      // dogPic1Old: 'images/dogs/luluOld.jpeg',
       var app = new Vue({
         el: '#app',
         data: {
